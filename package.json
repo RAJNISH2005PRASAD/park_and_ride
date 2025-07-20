@@ -1,0 +1,20 @@
+{
+  "name": "park-and-ride",
+  "version": "1.0.0",
+  "description": "Smart Parking & Last-Mile Connectivity Solution",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["parking", "ride-sharing", "smart-city", "transportation"],
+  "author": "Park and Ride Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
